@@ -1,0 +1,75 @@
+@media screen and (min-width:480px){
+.menu-button{
+display: inline-flex;
+margin: 0;
+padding: 0;
+  border: 0;
+  background-color: transparent;
+  & .icon-cross{
+      display: none;
+      width: 20px;
+  }
+  &.is-open .icon-cross{    
+    display: block;
+    }
+ &.is-open .icon-menu{    
+    display: none;
+        }
+}
+
+.menu-container{
+    display: none;
+    position: absolute;
+    top:60px;
+    left:0;
+    width: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 60px 140px ;
+    &.is-open{
+        display: block;
+    }
+}
+.mobile-menu{
+    
+    display: block;
+    fill:#212121;
+    margin-top: 10px;
+    :hover{
+        fill:$accent-color;  
+    }
+    & .icon-menu{
+        width:40px;
+        height: 40px;
+    }
+    & .icon-cross{
+        width:20px;
+        height: 20px;
+    }
+    
+}    
+    .address{
+        display: none;
+    } 
+
+}
+
+@media screen and (min-width:768px){
+    .menu-container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0px;
+        top: 0;
+        
+          
+    }
+    
+    .menu-button{
+    display: none;
+    }
+    
+    .address{
+        display: block;
+    } 
+} 

@@ -1,0 +1,24 @@
+
+.logo {
+    width: 141px;
+    height: 28px;
+    margin-top: 26px;
+    margin-bottom: 16px;
+    }
+  .logo-img-svg {
+    width: 153px;
+    height: 31px;
+  }
+  @media screen and (min-width:768px){
+    .logo {
+      margin-right: 81px;
+      margin-bottom: 26px;
+    }
+  }
+  @media screen and (min-width:1200px){
+  .logo {
+    margin-left: 93px;
+    margin-right: 85px;
+    margin-bottom: 26px;
+  }
+}

@@ -1,0 +1,31 @@
+.title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.269;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+  .about & {
+    margin-bottom: 50px;
+  }
+  .clients & {
+    margin-bottom: 30px;
+  }
+  .co-worker & {
+    margin-bottom: 30px;
+  }
+  
+}
+@media screen and (min-width:1200px){
+  .title{
+    font-weight: 700;
+  font-size: 36px;
+  .co-worker & {
+    margin-bottom: 50px;
+  }
+  .clients & {
+    margin-bottom: 50px;
+  }
+  }
+
+}

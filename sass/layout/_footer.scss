@@ -1,0 +1,64 @@
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  
+}
+.address-footer{
+  text-align: center;
+}
+.address-footer-description {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #ffffff;
+} 
+.address-list-footer{
+   &-mail, &-tel {
+    color: #ffffff;
+    
+  }
+}
+@media screen and (min-width:768px){
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  &-tablet{
+    
+    padding-left: 61px;
+    padding-right: 74px;
+    display: flex;
+    justify-content: space-between;
+
+    
+  }
+  }
+}
+@media screen and (min-width:1200px){
+  .footer {
+    margin: 0 auto;
+     padding-top: 0px;
+      &-tablet{
+              justify-content: start;
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+           
+    }
+    }
+    .address-footer{
+      margin-top: 60px;
+      text-align: left;
+      width: 231px;
+      margin-right: 70px;
+      
+    } 
+    .address-footer-description {
+      text-align: left;
+    } 
+}
+
+@import "./subscription-social";
+@import "./subscription";
