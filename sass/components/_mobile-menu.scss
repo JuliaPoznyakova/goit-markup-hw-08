@@ -55,21 +55,45 @@ padding: 0;
 }
 
 @media screen and (min-width:768px){
-    .menu-container{
+    .menu-container.is-open {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+    .menu-container{
+        
         position: relative;
         padding: 0px;
         top: 0;
-        
-          
+         
     }
-    
-    .menu-button{
+    .adress-div{
+        margin-top: 21px;
+        margin-right: 15px;
+        
+        padding: 0;
+    }
+    .navigation-div{
+        margin-top: 32px;
+        
+    }
+        .menu-button{
     display: none;
     }
-    
     .address{
         display: block;
     } 
+} 
+@media screen and (min-width:1200px){
+    .navigation-div{
+        margin-top: 0px;
+        
+    }
+    .adress-div{
+        margin-top: 32px;
+        margin-right: 200px;
+         padding: 0;
+    }
+    
+    
 } 
