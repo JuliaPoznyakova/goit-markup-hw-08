@@ -1,35 +1,5 @@
 @media screen and (min-width:480px){
-.menu-button{
-display: inline-flex;
-margin: 0;
-padding: 0;
-  border: 0;
-  background-color: transparent;
-  & .icon-cross{
-      display: none;
-      width: 20px;
-  }
-  &.is-open .icon-cross{    
-    display: block;
-    }
- &.is-open .icon-menu{    
-    display: none;
-        }
-}
 
-.menu-container{
-    display: none;
-    position: absolute;
-    top:60px;
-    left:0;
-    width: 100%;
-    text-align: center;
-    background-color: #FFFFFF;
-    padding: 60px 140px ;
-    &.is-open{
-        display: block;
-    }
-}
 .mobile-menu{
     
     display: block;
@@ -54,18 +24,49 @@ padding: 0;
 
 }
 
-@media screen and (min-width:768px){
-    .menu-container.is-open {
-        display: flex;
-        justify-content: space-between;
-        background-color: transparent;
+@media screen and (max-width: 767px) {
+    .menu-container{
+        display: none;
+        position: absolute;
+        top:60px;
+        left:0;
+        width: 100%;
+        text-align: center;
+        background-color: #FFFFFF;
+        padding: 60px 140px ;
+        &.is-open{
+            display: block;
+        }
     }
+    .menu-button{
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+          border: 0;
+          background-color: transparent;
+          & .icon-cross{
+              display: none;
+              width: 20px;
+          }
+          &.is-open .icon-cross{    
+            display: block;
+            }
+         &.is-open .icon-menu{    
+            display: none;
+                }
+        }
+}
+
+@media screen and (min-width:768px){
+ 
     .menu-container{
         
         position: relative;
         padding: 0px;
         top: 0;
-         
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
     }
     .adress-div{
         margin-top: 21px;
