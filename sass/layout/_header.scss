@@ -86,10 +86,9 @@
 
   .address-list {
     display: flex;
-    width: 148px;
     margin-left: 69px;
     flex-direction: column;
-    align-items: center;
+    
     &-item {
       width: 148px;
       display: flex;
@@ -138,8 +137,21 @@
   } 
 }
 @media screen and (min-width:1200px){
+  
+  .address-list{
+    flex-direction: inherit;
+    &-item {
+      margin-right: 30px;
+      
+    } 
+    &-item-mail,&-item-tel {
+        
+      font-size: 12px;
+      line-height: 1.143;
+    }
+  }
   .navigation {
-   
+   margin-top: 32px;
     &-list-link {
        &:hover::after {
         top: 30px;
@@ -147,21 +159,5 @@
     }
   }
   
-  .address-list {
-    justify-content: space-between;
-    flex-direction: row;
-    &-item {
-      height: 20px;
-      width: 180px;  
-    } 
-    
-    &-item-mail,&-item-tel {
-        font-size: 14px;
-        line-height: 1.143;
-         
-    }
-    &-item:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
+
 }
