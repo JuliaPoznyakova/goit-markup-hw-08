@@ -36,7 +36,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -372,7 +372,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     display: block;
     fill: #212121;
@@ -389,12 +389,6 @@ img {
     width: 20px;
     height: 20px;
   }
-  .address {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
@@ -407,6 +401,9 @@ img {
   }
   .menu-container.is-open {
     display: block;
+  }
+  .address {
+    display: none;
   }
   .menu-button {
     display: inline-flex;
